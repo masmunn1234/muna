@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Checkout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 30px auto;
+            background-color: #ffffff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+        }
+        input[type="text"], input[type="email"], input[type="number"], input[type="tel"], textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .row {
+            display: flex;
+            gap: 20px;
+        }
+        .row > div {
+            flex: 1;
+        }
+        .order-summary {
+            background-color: #f0f0f0;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+        }
+        .order-summary p {
+            margin: 5px 0;
+        }
+        .order-summary .total {
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+        .btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Halaman Checkout</h2>
+
+        <!-- Form Pengiriman -->
+        <form action="/checkout" method="POST">
+            <div class="form-group">
+                <label for="full-name">Nama Lengkap</label>
+                <input type="text" id="full-name" name="full_name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">No. Telepon</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Alamat Pengiriman</label>
+                <textarea id="address" name="address" rows="4" required></textarea>
+            </div>
+
+            <!-- Pembayaran -->
+            <div class="form-group">
+                <label for="payment-method">Metode Pembayaran</label>
+                <select id="payment-method" name="payment_method" required>
+                    <option value="bank-transfer">Transfer Bank</option>
+                    <option value="credit-card">Kartu Kredit</option>
+                    <option value="cash-on-delivery">Bayar di Tempat</option>
+                </select>
+            </div>
+
+            <!-- Rincian Pesanan -->
+            <div class="order-summary">
+                <h3>Rincian Pesanan</h3>
+                <p>Produk: <span>Nama Produk 1</span></p>
+                <p>Harga: <span>Rp 200,000</span></p>
+                <p>Jumlah: <span>1</span></p>
+                <p class="total">Total: <span>Rp 200,000</span></p>
+            </div>
+
+            <a href="produk.html">PESAN </a>
+        </form>
+    </div>
+</body>
+</html>

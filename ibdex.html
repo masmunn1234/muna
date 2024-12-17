@@ -1,0 +1,76 @@
+!<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warung Hasil Sukses</title>
+    <link rel="stylesheet" href="muna.css">
+    
+    <style>
+
+        body {
+            font-family: sans-serif;
+            background-image: url(17M.webp);
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: rgba(189, 21, 21, 0.8);         
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(221, 205, 205, 0.849);
+            text-align: center;
+            border-radius: 999999 px;
+        }
+        h1 {
+            color: #141414;
+        }
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 9999px;
+            border: 1px solid #0f0909;
+        }
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            background-color: #1266c0;
+            color: rgb(10, 6, 6);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>WARUNG SELA AYAM GEPREK</h1>
+        <form>
+            <label for="username">USERNAME:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">KATA SANDI:</label>
+            <input type="password" id="password" name="password" required>
+
+            <!-- <button type="submit">LOGIN</button> 0-->
+            <button onclick="window.location.href='produk.html'">LOGIN  </button>
+        </form>
+    </div>
+    <div class="fakeLoader"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="muna.js"></script>
+        <script>
+            $(document).ready(function () {
+                $.fakeLoader({
+                    bgColor: 'black',
+                    spinner:"spinner3"
+                });
+            });
+        </script>
+</body>
+</html> **

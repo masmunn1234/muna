@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body class="bg-pink-400">
+    <div class="container mx-auto py-8">
+      <div class="grid grid-cols-4 gap-4">
+        <div class="text-center">
+          <a href="harga.html">
+            <img
+              alt="Piattos snack pack"
+              class="mx-auto"
+              src="POCARI-removebg-preview.png"
+          /></a>
+          <p class="text-black font-bold">POCARI SWEAT</p>
+        </div>
+        <div class="text-center">
+          <a href="harga.html">
+            <img
+              alt="Gopek snack pack"
+              class="mx-auto"
+              src="GOLDA-removebg-preview.png"
+          /></a>
+          <p class="text-black font-bold">GOLDA</p>
+        </div>
+        <div class="text-center">
+          <a href="harga.html">
+            <img
+              alt="Chiki Balls snack pack"
+              class="mx-auto"
+              src="sprite-removebg-preview.png"
+          /></a>
+          <p class="text-black font-bold">SPRITE</p>
+        </div>
+        <div class="text-center">
+          <a href="harga.html">
+            <img
+              alt="Gery snack pack"
+              class="mx-auto"
+              src="abc-removebg-preview.png"
+          /></a>
+          <p class="text-black font-bold">ABC KACANG HIJAU</p>
+        </div>
+      </div>
+      <div class="grid grid-cols-4 gap-4 mt-8">
+        <div class="text-center">
+          <a href="harga.html">
+            <img
+              alt="ABC Kacang Hijau drink pack"
+              class="mx-auto"
+              src="teh pucuk.jpg"
+          /></a>
+          <p class="text-black font-bold">TEH PUCUK</p>
+        </div>
+        <div class="text-center">
+          <a href="harga.html">
+            <img
+              alt="Milku drink pack"
+              class="mx-auto"
+              src="milku-removebg-preview.png"
+          /></a>
+          <p class="text-black font-bold">MILKU</p>
+        </div>
+        <div class="text-center">
+          <a href="harga.html">
+            <img
+              alt="Sprite drink bottle"
+              class="mx-auto"
+              src="download-removebg-preview.png"
+          /></a>
+          <p class="text-black font-bold">FLORIDINA</p>
+        </div>
+        <div class="text-center">
+          <a href="harga.html">
+            <img
+              alt="Le Mineral drink bottle"
+              class="mx-auto"
+              src="mineral-removebg-preview.png"
+          /></a>
+          <p class="text-black font-bold">LE MINERALE</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+</body>
+</html>
